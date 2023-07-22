@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="body">
+        <header style="text-align: center;">Multiple Timers App</header>
+        <div class="timercontainer">
+        <form>
+                 <div class="input_time">   
+                    <div class="message">
+                        Set Time:
+                    </div>
+                    <div class="inputboxes">
+                     <input type="number" id="hours" required min="0" placeholder="hh">
+                     :<input type="number" id="minutes" required min="0" max="59" placeholder="mm">   
+                     :<input type="number" id="seconds" required min="0" max="59" placeholder="ss">      
+                    </div>
+                    <button type="submit" id="subt">Set</button>
+                </div>
+            </form>
+                </div>
+            <div class="uiel">Current Timers</div>
+            <div class="activetimer">You have no active timers currently!</div>
+            <audio src="./media/timer.mp3" style="display: none;" id="audio"></audio>   
+    </div>     
+  
+ <script src="./script.js"></script>   
+</body>
+</html>
